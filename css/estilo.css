@@ -1,0 +1,295 @@
+/*
+Geral
+Definindo os gerais do site ou seja, que irão ser sempre os mesmo.
+As fontes que contém aspas só são usados caso a fonte possua mais de 
+um nome.
+*PODERIA SER CRIADO UMA CLASSE SECTION PARA ECONOMIZAR ALGUNS CÓDIGOS REPETIDOS
+*/
+
+body{
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	color: #4d4d4d;
+}
+h1,h2,h3{
+	margin: 0;
+	font-family: "Roboto Slab",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+}
+
+.botao{
+	color: #f1f1f1;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #2c345b;
+	font-size: .9em;
+	border-radius: 3px;
+}
+.botao:hover{
+	background-color: #FFF;
+	color: #000;
+}
+
+/* 
+Navegação
+para evitar incompatibilidade com o navegador utilizar autoprefixer
+*/
+nav{
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	background-color: #FFF;
+
+}
+/*mudando estilo somente do "a" que pertence ao nav*/
+nav > a{
+	text-decoration: none;
+	color:#000;
+	font-weight: 700;
+	font-size: 28px;
+	font-family: Pacifico,serif;
+}
+/*mudando o estilo da lista*/
+nav ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+
+}
+/*selecionando cada item dentro da lista */
+nav ul li{
+	width: 100%;
+	text-align: center;
+}
+
+/* alterando os links que estão dentro dos itens de lista dento da lista dentro da navegação*/
+nav ul li a{
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	/*color: #f1f1f1;*/
+	color: #000;
+}
+
+/*
+Cabeçalho
+*/
+header{
+	background-image: url('../img/fundo.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #f1f1f1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+header p{
+	margin-bottom: 2em;
+
+}
+/*
+Sobre
+*/
+#sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align:center;
+	padding: 0 20px 20px;
+	background-color: #ed2f2f;
+	color:#f1f1f1;
+
+}
+#sobre p{
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+
+#sobre .botao{
+	background-color: #f1f1f1;
+	color: #4d4d4d;
+}
+
+
+/*
+Serviços
+*/
+#servicos{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#servicos div{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+
+/* Portfolio */
+
+#portfolio{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+
+}
+#portfolio h2{
+	margin-top: 20px;
+
+}
+figure.trabalhos-recentes {
+	position: relative;
+	width: 423px;            /*Largura do Conteiner-- 50%??*/
+	display: inline-block;
+    margin:-3px ;
+    top: 0px;/*em relação o topo da galeria*/
+    z-index: 0;
+}   /*FORMATAÇÃO DA IMAGENS E LEGENDAS RECENTES*/
+
+       
+@media only screen and (min-width: 1285px) {
+    body { background-color: #fff; }
+    figure.trabalhos-recentes {
+       
+        width: 33.5%;   /*Largura do Conteiner*/
+        display: inline-block;  }
+    figure.trabalhos-recentes img {
+        
+     width: 100%; }
+    
+}
+
+
+/*1277px */
+@media only screen and (max-width: 1277px) {
+    
+    figure.trabalhos-recentes { width: 33.5%;   /*Largura do Conteiner*/
+        display: inline-block;  }
+    figure.trabalhos-recentes img { width: 100%; }
+         }
+
+
+/*668px*/
+/*BREAKPOINT - fotos em 1 linha*/
+@media only screen and (max-width: 668px) {
+    body { background-color: #fff; } /*cor de fundo #fff*/
+    
+    figure.projetos img { width: 100%; }  /*Largura do Conteiner*/ 
+}
+
+
+
+/*
+Contato
+*/
+
+#contato{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+/*
+Footer
+*/
+footer{
+	text-align: center;
+	padding: 10px;
+	background-color: #4d4d4d;
+	color: #f1f1f1
+}
+
+/*
+Media Queries
+*/
+
+@media screen and (min-width: 768px) {
+	/*
+	Navegação
+	*/
+	nav{
+		flex-direction: row;
+		justify-content: space-around;
+
+	}
+	nav ul{
+		flex-direction: row;
+		width: 70%;
+	}
+	/* Cabeçalho*/
+	header{
+		height: 600px;
+		height: 60vh;
+		justify-content: center;
+
+	}
+	/* Sobre*/
+	#sobre{
+		height: 250px;
+		height: 30vh;
+		justify-content: center;
+		min-height: 250px;
+	}
+	/* Servicos */
+	#servicos {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	#servicos h2{
+		text-align: center;
+		width: 100%;
+	}
+	#servicos div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    /*Portfolio*/
+    
+    #portfolio h2{
+    	width: 100%;
+    	text-align: center;
+    }
+
+
+    
+    /*contato*/
+    #contato{
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	justify-content: space-around;
+    	max-width: 500px;
+    	margin: 0 auto;
+    }
+    #contato h2, #contato p{
+    	width: 100%;
+    }
+}
+
+
+/*559px Portfolio celular*/    
+	@media only screen and (max-width: 559px) {
+  
+    	figure.trabalhos-recentes { width: 100%; /*Largura do Conteiner*/
+    	    display: inline-block; }
+   		 figure.trabalhos-recentes img { width: 100%;}
+    
+	}
+    
+
+
+}

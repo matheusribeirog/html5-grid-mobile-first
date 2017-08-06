@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Para utilizar o plugin  Emmet ,para iniciar a abertura html clicar ! + TAB-->
+<!-- Todos os direitos autorais e qualquer natureza disponibilizadas neste site,
+pertencem à Matheus Ribeiro ou a terceiros que autorizaram o uso de sua propriedade intelectual.
+
+Sendo assim, é terminantemente vedada a distribuição, venda, revenda, republicação, uso comercial e/ou utilização de tais
+materiais, sem a prévia e expressa autorização de Matheus Ribeiro.
+
+Direitos autorais do lightbox: http://lokeshdhakar.com/projects/lightbox2/
+-->
+<html lang="pt-br">
+<head>
+
+	<meta name="author" content="Matheus Ribeiro">
+
+	<meta charset="UTF-8">
+	<title>Página Responsiva HTML  5 e CSS 3</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico|Roboto+Slab:400,700" rel="stylesheet">
+	<!-- O normalize está em primeiro pela hierarquia, se estivesse em segundo algumas classes dele substituiriam a do estilo.css -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	
+	<!-- Carregando os estilos do Lightbox -->
+	<link rel="stylesheet" href="css/lightbox.css">
+
+	<!-- Meta Responsividade -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+
+<body>
+
+	<nav>
+		<a href="#">Lorem Ipsum</a>
+		<ul>
+			<li><a href="#sobre">Sobre</a></li>
+			<li><a href="#servicos">Serviços</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contato">Contato</a></li>
+		</ul>
+	</nav>
+
+	 <header>
+        <h1>LOREM IPSUM</h1>
+        <p>Site utilizando conceito de desenvolvimento mobile firist, e framework Light Box para o portfolio.</p>
+        <a href="#sobre" class="botao">VER MAIS</a>
+    </header>
+
+	<section id="sobre">
+		<h2>Sobre</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper tristique ante.</p>
+		<a href="#contato" class="botao">Entre em Contato</a>
+	</section>
+	<section id="servicos">
+		<h2>Serviços</h2>
+		<div>
+			<img src="img/configs.png" alt="Configuração">
+			<h3>Fácil Integração</h3>
+			<p>Integra facilmente seu site a qualquer gerenciador de conteúdo</p>
+		</div>
+		<div>
+			<img src="img/hospedagem.png" alt="Configuração">
+			<h3>Fácil Integração</h3>
+			<p>Integra facilmente seu site a qualquer gerenciador de conteúdo</p>
+		</div>
+		<div>
+			<img src="img/site.png" alt="Configuração">
+			<h3>Fácil Integração</h3>
+			<p>Integra facilmente seu site a qualquer gerenciador de conteúdo</p>
+		</div>
+		<div>
+			<img src="img/coracao.png" alt="Configuração">
+			<h3>Fácil Integração</h3>
+			<p>Integra facilmente seu site a qualquer gerenciador de conteúdo</p>
+		</div>
+	</section>
+	<section id="portfolio">
+		<h2>Portfólio</h2>
+		
+			<div id="recentes">
+           
+           <figure class="trabalhos-recentes">
+               <a href="IMG/portfolio-1.jpg" data-lightbox="image-1" data-title="My caption"><img src="img/portfolio-1.jpg"/>
+               
+               </a>
+           </figure>
+           <figure class="trabalhos-recentes">
+               <a href="IMG/portfolio-2.jpeg" data-lightbox="image-1" data-title="My caption"><img src="img/portfolio-2.jpeg"/>
+               
+               </a>
+           </figure>
+           <figure class="trabalhos-recentes">
+               <a href="IMG/portfolio-3.jpeg" data-lightbox="image-1" data-title="My caption"><img src="img/portfolio-3.jpeg"/>
+               
+               </a>
+           </figure>
+           <figure class="trabalhos-recentes">
+               <a href="IMG/portfolio-4.jpg" data-lightbox="image-1" data-title="My caption"><img src="img/portfolio-4.jpg"/>
+               
+               </a>
+           </figure>
+           <figure class="trabalhos-recentes">
+               <a href="IMG/portfolio-5.jpeg" data-lightbox="image-1" data-title="My caption"><img src="img/portfolio-5.jpeg"/>
+               
+               </a>
+           </figure>
+           <figure class="trabalhos-recentes">
+               <a href="IMG/portfolio-6.jpeg" data-lightbox="image-1" data-title="My caption"><img src="img/portfolio-6.jpeg"/>
+               
+               </a>
+           </figure>
+           
+   </div>
+
+		
+	</section>
+	<section id="contato">
+		<h2>Contato</h2>
+		<p>Entre em contato conosco</p>
+		<div>
+			<img src="img/fone.png" alt="fone">
+			<p><a href="tel:xx5555-5555">(11)222-5525</a></p> 
+		</div>
+		<div>
+			<img src="img/contato.png" alt="e-mail">
+			<p><a href="mailto:teste@gmail.com">email@contato.com</a></p>
+		</div>
+	</section>
+	<footer>
+		<p>Desenvolvido Por Matheus Ribeiro</p>
+	</footer>
+
+	  <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>
